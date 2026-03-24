@@ -231,7 +231,7 @@ body {
 /* HERO SECTION */
 .hero-section {
     background: var(--tp-green);
-    padding: 60px 0 120px 0; /* Increased padding */
+    padding: 30px 0 80px 0 !important; /* Reduced from 60px/120px */
     text-align: center;
     color: white;
     transition: background-color 0.3s;
@@ -241,33 +241,37 @@ body {
     background: var(--tp-hero-bg);
 }
 
+[data-theme="dark"] .hero-section {
+    background: var(--tp-hero-bg);
+}
+
 .hero-content {
-    margin-bottom: 80px; /* Space for the peeking hippo */
+    margin-bottom: 50px !important; /* Reduced from 80px */
 }
 
 .hero-content h1 {
-    font-size: 42px;
+    font-size: 36px !important; /* Reduced from 42px */
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     letter-spacing: -1px;
 }
 
 .hero-subtext {
-    font-size: 18px;
+    font-size: 16px !important; /* Reduced from 18px */
     opacity: 0.9;
-    margin-bottom: 40px;
+    margin-bottom: 20px !important;
 }
 
 /* UPLOAD AREA */
 .upload-wrapper {
     position: relative;
-    max-width: 760px;
-    margin: 40px auto 0; /* Add top margin */
+    max-width: 700px !important; /* Slightly narrower */
+    margin: 20px auto 0 !important;
 }
 
 .hippo-peek {
     position: absolute;
-    top: -90px; /* Adjust peeking position */
+    top: -70px !important; /* Adjusted for smaller mascot */
     left: 20px;
     z-index: 2;
 }
@@ -277,8 +281,8 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--tp-white);
-    width: 140px;
-    height: 140px;
+    width: 110px !important; /* Reduced from 140px */
+    height: 110px !important; /* Reduced from 140px */
     border-radius: 50%;
     border: 4px solid var(--tp-white);
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
@@ -299,7 +303,7 @@ body {
     background: var(--tp-white);
     border: 3px dashed var(--tp-box-border);
     border-radius: 20px;
-    padding: 60px 20px;
+    padding: 40px 20px !important; /* Reduced from 60px */
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -320,7 +324,7 @@ body {
 }
 
 .upload-icon {
-    margin-bottom: 20px;
+    margin-bottom: 10px !important; /* Reduced from 20px */
     animation: bounce 2s infinite;
 }
 
@@ -331,14 +335,14 @@ body {
 }
 
 .upload-text {
-    font-size: 24px;
+    font-size: 20px !important; /* Reduced from 24px */
     font-weight: 700;
     color: var(--tp-text);
-    margin-bottom: 8px;
+    margin-bottom: 4px !important;
 }
 
 .upload-hint {
-    font-size: 14px;
+    font-size: 13px !important; /* Reduced from 14px */
     color: var(--tp-text-light);
 }
 
@@ -467,30 +471,30 @@ input:checked + .slider:before {
 .steps-guide {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
+    gap: 40px !important;
+    margin-top: 30px !important;
+    padding-bottom: 40px !important;
 }
 
 .step-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 10px !important;
+    position: relative;
 }
 
 .step-num {
-    width: 28px;
-    height: 28px;
+    width: 28px !important;
+    height: 28px !important;
     background: rgba(255,255,255,0.2);
-    color: white;
+    border: 1px solid rgba(255,255,255,0.4) !important;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 900;
-    font-size: 14px;
-    border: 1.5px solid white;
+    font-size: 13px !important;
+    font-weight: 700 !important;
 }
 
 .step-item p {
